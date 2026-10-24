@@ -1,0 +1,85 @@
+/* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--color-tomato: #FF6347;
+--color-orangered: #FF4500;
+--color-coral: #FF7F50;
+--color-lightsalmon: #FFA07A;
+--color-darkorange: #FF8C00;
+
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-left: 0%;
+    
+    
+
+    
+
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.tomato {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-tomato);
+   
+
+}
+.codes {
+    letter-spacing: 0.25rem;
+     font-size:small;
+
+}
+.orangered {
+      display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-orangered);
+   
+}
+.coral {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-coral); 
+}
+.lightsalmon {
+     display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-lightsalmon);
+}
+.darkorange {
+     display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-darkorange);
+}
+/* === your rules === */
