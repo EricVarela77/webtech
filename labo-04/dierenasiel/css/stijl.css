@@ -1,0 +1,135 @@
+/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --color-papier:#f7f4ec;
+    --color-kaart:#2b2b2b ;
+    --color-gedempt: #6b6b6b;
+    --color-balk: #1f3a2e;
+    --color-tekst: #f3efe6;
+    --color-accent: #e6b53c;
+}
+body {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows:auto 1fr auto;
+     font-family: verdana;
+     min-height: 100vh;
+      background-color: var(--color-papier);
+     
+}
+header {
+    background-color: var(--color-balk);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1.50rem 2rem;
+    align-items: center;
+}
+.logo, .actief  {
+color: var(--color-accent);
+text-decoration: none;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+     gap: 1rem;
+     margin: 0;
+    padding: 0;
+    }
+nav a {
+    text-decoration: none;
+    color: var(--color-tekst);
+    padding: 0.75rem 0;
+    border-radius: 0.5rem;
+}
+main {
+    line-height: 1.6;
+    margin:0 auto;
+    max-width: 60rem;
+    padding: 2rem;
+    background-color: var(--color-papier);
+
+}
+.soort {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.intro, .soort {
+    color:var(--color-gedempt);
+}
+.kaarten {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    gap: 1.5rem;
+    padding: 0;
+    
+    
+    
+    
+
+}
+
+.kaart {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+}
+main ul {
+    list-style: none;
+}
+.knop {
+    background-color: var(--color-balk);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: var(--color-tekst);
+    text-decoration: none;
+}
+.uitgelicht {
+    grid-column: 1 / 3;
+    grid-row: 1;
+   
+}
+.kaarten li:nth-child(2) {
+
+grid-column: 3 /4;
+grid-row: 1;
+}
+.beschrijving {
+    margin: 1rem 0;
+    flex:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-balk);
+    color: var(--color-tekst);
+    padding: 1.5rem 0;
+    
+}
+/* === your rules === */
